@@ -5,11 +5,14 @@ body, main {
 
 body {
   flex-direction: column;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 20px, black 20px, black 40px);
+  background-repeat: repeat-y;
 }
 
 main {
   flex-direction: row;
   flex: auto;
+  background-color: lightblue;
 }
 
 article, aside {
@@ -22,4 +25,23 @@ article {
 
 aside {
   flex: 1;
+}
+
+header, footer {
+  background-color: beige;
+}
+
+footer {
+  height: 20px;
+}
+
+.share {
+  float: right;
+}
+
+.fb-share-button {
+}
+
+.twitter-share-button{
+  vertical-align: top;
 }

@@ -1,45 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Ben's Site
-    </title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/checkbox.css">
-    <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
-    <script type="text/javascript" src="/js/script.js"></script>
-  </head>
-  <body class="works_on_smartphone">
-    <header>
-      <ul>
-        <li>
-          <a href="tweets.html">Tweets</a>
-        </li>
-        <li>bar</li>
-      </ul>
-    </header>
-    <main>
-      <article>
+<head>
+  <title>
+    Ben's Site
+  </title>
+  <meta charset="UTF-8">
+  <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/checkbox.css">
+  <script type="text/javascript" src="/js/script.js"></script>
+</head>
+<body class="works_on_smartphone">
 
-        Potato <br>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
-        <div class="container">
-          <input type="checkbox" id="check" checked>
-          <label for="check" class="chkbx"><div class="mark"></div>
-          </label>
-        </div>
+  <header>
+    <ul>
+      <li>
+        <a href="tweets.html">Tweets</a>
+      </li>
+      <li>bar</li>
+    </ul>
+    <div class="share">
+      <div class="fb-share-button" data-href="http://92.243.18.163" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F92.243.18.163%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </header>
+  <main>
 
-        <a href="#"><img id="smart_thumbnail" class="small" src="http://www.morewallpapers.com/wp-content/uploads/2016/02/Cute-cat-playing-with-clew.jpg" alt="Adorable cat with some yarn"></a>
+    <article>
 
-      </article>
-      <aside>
-        yeet
-      </aside>
-    </main>
-    <footer>
-      Made by <a href="https://twitter.com/@thebenkeener" target="_blank">Ben Keener</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>
-    </footer>
-  </body>
+      Potato <br>
+
+      <div class="container">
+        <input type="checkbox" id="check" checked>
+        <label for="check" class="chkbx"><div class="mark"></div>
+        </label>
+      </div>
+
+      <a href="#"><img id="smart_thumbnail" class="small" src="http://www.morewallpapers.com/wp-content/uploads/2016/02/Cute-cat-playing-with-clew.jpg" alt="Adorable cat with some yarn"></a>
+
+    </article>
+    <aside>
+      <div id="disqus_thread"></div>
+      <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://lanc-holberton.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+    </aside>
+
+</main>
+<footer>
+  Made by <a href="https://twitter.com/@thebenkeener" target="_blank">Ben Keener</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>
+</footer>
+</body>
 
 </html>
