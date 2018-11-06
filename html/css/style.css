@@ -35,13 +35,48 @@ footer {
   height: 20px;
 }
 
+header {
+  height: 40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+li {
+  float: left;
+  vertical-align: bottom;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .share {
   float: right;
 }
 
-.fb-share-button {
+.twitter-share-button, .fb-share-button {
+  vertical-align: top;
 }
 
-.twitter-share-button{
-  vertical-align: top;
+.main-title {
+  font-size: 24px;
+}
+
+.about-head {
+  float: right;
+}
+
+.active {
+  background-color: #4CAF50;
 }
