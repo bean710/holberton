@@ -5,8 +5,8 @@ body, main {
 
 body {
   flex-direction: column;
-  background-image: repeating-linear-gradient(-45deg, transparent, transparent 20px, black 20px, black 40px);
-  background-repeat: repeat-y;
+  background-image: url(https://blausternschlonge.files.wordpress.com/2014/01/susquehanna-river-rockville-bridge-4.jpg);
+  background-size: cover;
 }
 
 main {
