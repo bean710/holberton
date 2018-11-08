@@ -46,3 +46,8 @@ footer {
 .main-title {
   font-size: 24px;
 }
+
+.article-pic {
+	float: right;
+	width: 250px;
+}
