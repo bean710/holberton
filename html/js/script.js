@@ -2,18 +2,20 @@ document.addEventListener("DOMContentLoaded", function(event){
 	var cat = document.getElementById("smart_thumbnail");
 
 	cat.addEventListener("click", function() {
-		if (cat.classList.contains("small")) {
-			cat.className = "";
+		if (cat.classList.contains("article-pic")) {
+			cat.className = "article-pic-big";
 		} else {
-			cat.className = "small";
+			cat.className = "article-pic";
 		}
 	});
 
-	var pics = getElementByClass("article-pic");
+	var cat2 = document.getElementById("smart_thumbnail2");
 
-	for (var img in pics) {
-		img.addEventListener("click", function() {
-			
-		})
-	}
+	cat2.addEventListener("click", function() {
+		if (cat2.classList.contains("article-pic")) {
+			cat2.className = "article-pic-big";
+		} else {
+			cat2.className = "article-pic";
+		}
+	});
 });
